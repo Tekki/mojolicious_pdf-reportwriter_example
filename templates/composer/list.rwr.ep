@@ -59,6 +59,7 @@
                 <!-- and a different alignment -->
                 <align>left</align>
                 <header_colour>white</header_colour>
+                <wrap_text>1</wrap_text>
             </field>
              
             <field>
