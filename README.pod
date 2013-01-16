@@ -1,6 +1,6 @@
 =head1 NAME
 
-Mojolicious - FOP - Example
+Mojolicious - PDF::ReportWriter - Example
 
 =head1 DESCRIPTION
 
