@@ -9,7 +9,7 @@ sub list {
   my $self = shift;
 
   my $composers = Ragtime::ComposerList->load;
-  $self->title('Mojolicious FOP Example');
+  $self->title('Mojolicious PDF::ReportWriter Example');
   $self->stash(subtitle => 'Ragtime Composers');
   $self->stash(list => $composers);
 
