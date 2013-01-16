@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Based on "A Basic example with some layout refinements"
+    by Cosimo Streppone
+-->
+<report>
+     
+    <definition>
+        <name><%= title %></name>
+        <destination>composers.pdf</destination>
+        <paper>A4</paper>
+        <orientation>portrait</orientation>
+        <font>Helvetica</font>
+        <font>Courier</font>
+        <default_font>Helvetica</default_font>
+        <default_font_size>10</default_font_size>
+        <x_margin>28.346</x_margin><!-- 10 mm -->
+        <y_margin>28.346</y_margin>
+    </definition>
+     
+    <data>
+     
+        <!-- Draw cell borders -->
+        <cell_borders>1</cell_borders>
+         
+        <!-- Leave some space between page headers
+             and field headers (10 mm) -->
+        <field_headers_upper_buffer>28.346</field_headers_upper_buffer>
+         
+        <!-- Field headers should be drawn colored -->
+        <headings>
+            <background shape="box" colour="#408060"/>
+        </headings>
+         
+        <page>
+         
+            <header>
+                <cell index="0">
+                    <text><%= $subtitle %></text>
+                    <percent>100</percent>
+                    <font_size>20</font_size>
+                    <colour>green</colour>
+                    <align>center</align>
+                </cell>
+            </header>
+         
+        </page>
+         
+        <fields>
+            <field>
+                <name>Name</name>
+                <index>0</index>
+                <percent>30</percent>
+                <!-- We can use a different color, font & size for each cell -->
+                <background shape="box" colour="#509060"/>
+                <colour>white</colour>
+                <font>Courier</font>
+                <font_size>12</font_size>
+                <!-- and a different alignment -->
+                <align>left</align>
+                <header_colour>white</header_colour>
+            </field>
+             
+            <field>
+                <name>Born</name>
+                <index>1</index>
+                <percent>10</percent>
+                <font>Helvetica</font>
+                <font_size>12</font_size>
+                <align>center</align>
+                <header_colour>white</header_colour>
+            </field>
+             
+            <field>
+                <name>Died</name>
+                <index>2</index>
+                <percent>10</percent>
+                <font>Helvetica</font>
+                <font_size>12</font_size>
+                <align>center</align>
+                <header_colour>white</header_colour>
+            </field>
+             
+            <field>
+                <name>Famous Compositions</name>
+                <index>3</index>
+                <percent>50</percent>
+                <font>Helvetica</font>
+                <font_size>12</font_size>
+                <align>left</align>
+                <header_colour>white</header_colour>
+                <wrap_text>1</wrap_text>
+            </field>
+        </fields>
+         
+    </data>
+     
+</report>
