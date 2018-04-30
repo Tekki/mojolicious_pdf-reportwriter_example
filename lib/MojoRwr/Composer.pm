@@ -20,7 +20,7 @@ sub list {
 
       my $xmlfile = "$base/composers.xml";
       open my $out, '>', $xmlfile;
-      print $out $self->render_partial(format => 'rwr');
+      print $out $self->render_to_string(format => 'rwr');
       close $out;
 
       my $rw = PDF::ReportWriter->new;
